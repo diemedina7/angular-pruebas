@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './Heroes/heroes.module';
 import { ContadorModule } from './Contador/contador.module';
+import { MortalKombatModule } from "./MortalKombat/mortal-kombat.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ContadorModule } from './Contador/contador.module';
   imports: [
     BrowserModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    MortalKombatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

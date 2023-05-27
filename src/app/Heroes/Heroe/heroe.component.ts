@@ -23,4 +23,9 @@ export class HeroeComponent {
     cambiarEdad(): void {
         this.edad = 30;
     }
+
+    reiniciarForm(): void {
+        this.nombre = "Ironman";
+        this.edad = 45;
+    }
 }

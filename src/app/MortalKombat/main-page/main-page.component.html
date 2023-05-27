@@ -1,0 +1,11 @@
+<strong>Mortal kombat</strong>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [personajesList]="personajes" (onDelete)="onDeletePersonaje($event);"></app-personajes>
+    </div>
+    <div class="col">
+        <app-agregar (nuevoPersonaje)="onNewPersonaje($event);"></app-agregar>
+    </div>
+</div>

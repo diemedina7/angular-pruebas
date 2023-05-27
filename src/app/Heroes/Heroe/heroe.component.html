@@ -12,5 +12,6 @@
     <dd>{{ getNombreCap }}</dd>
 </dl>
 
-<button (click)="cambiarNombre();">Cambiar heroe</button>
-<button (click)="cambiarEdad();">Cambiar edad</button>
+<button *ngIf="nombre !== 'Spiderman'" (click)="cambiarNombre();">Cambiar heroe</button>
+<button *ngIf="edad !== 30" (click)="cambiarEdad();">Cambiar edad</button>
+<button (click)="reiniciarForm();">Reset</button>

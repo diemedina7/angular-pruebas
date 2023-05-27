@@ -1,0 +1,9 @@
+<h4>Agregar</h4>
+<form (ngSubmit)="agregar();" class="row">
+    <input type="text" class="form-control mb-2" name="nombre" [(ngModel)]="nuevo.nombre" placeholder="Nombre">
+        <!-- [(ngModel)] sirve para la asignacion del valor del input
+                como para la escucha del evento cambiando el valor mientras se tipea  -->
+        <!--[value]="nuevo.nombre" (input)="cambiarNombre($event);"-->
+    <input type="number" class="form-control mb-2" name="poder" [(ngModel)]="nuevo.poder" placeholder="Poder">
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
